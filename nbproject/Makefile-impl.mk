@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Furmigao_v2.0.X
+PROJECTNAME=Ruffus
 
 # Active Configuration
 DEFAULTCONF=default
