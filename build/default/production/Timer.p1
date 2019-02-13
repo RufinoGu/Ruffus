@@ -1,0 +1,78 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4 Timer.c
+[; ;Timer.c: 4: void InitTimer(void){
+[v _InitTimer `(v ~T0 @X0 1 ef ]
+{
+[e :U _InitTimer ]
+[f ]
+"5
+[; ;Timer.c: 5:     (*(volatile __near unsigned char*)0xFD5) = 0b00001000;
+[e = *U -> -> 4053 `i `*VNuc -> -> 8 `i `uc ]
+"6
+[; ;Timer.c: 6:     (((*(volatile __near unsigned char*)0xFD5)) |= (1<<7));
+[e =| *U -> -> 4053 `i `*VNuc -> << -> 1 `i -> 7 `i `uc ]
+"7
+[; ;Timer.c: 7: }
+[e :UE 1 ]
+}
+"9
+[; ;Timer.c: 9: void AguardaTimer(void){
+[v _AguardaTimer `(v ~T0 @X0 1 ef ]
+{
+[e :U _AguardaTimer ]
+[f ]
+"10
+[; ;Timer.c: 10:     while(!(((*(volatile __near unsigned char*)0xFF2)) & (1<<2)));
+[e $U 3  ]
+[e :U 4 ]
+[e :U 3 ]
+[e $ ! != & -> *U -> -> 4082 `i `*VNuc `i << -> 1 `i -> 2 `i -> 0 `i 4  ]
+[e :U 5 ]
+"11
+[; ;Timer.c: 11: }
+[e :UE 2 ]
+}
+"13
+[; ;Timer.c: 13: void ResetaTimer(unsigned int tempo){
+[v _ResetaTimer `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _ResetaTimer ]
+[v _tempo `ui ~T0 @X0 1 r1 ]
+[f ]
+"14
+[; ;Timer.c: 14:     unsigned ciclos = tempo * 2;
+[v _ciclos `ui ~T0 @X0 1 a ]
+[e = _ciclos * _tempo -> -> 2 `i `ui ]
+"15
+[; ;Timer.c: 15:     ciclos = 65535 - ciclos;
+[e = _ciclos -> - -> 65535 `l -> _ciclos `l `ui ]
+"16
+[; ;Timer.c: 16:     ciclos -= 14;
+[e =- _ciclos -> -> 14 `i `ui ]
+"17
+[; ;Timer.c: 17:     (*(volatile __near unsigned char*)0xFD7) = (ciclos >> 8);
+[e = *U -> -> 4055 `i `*VNuc -> >> _ciclos -> 8 `i `uc ]
+"18
+[; ;Timer.c: 18:     (*(volatile __near unsigned char*)0xFD6) = (ciclos & 0x00FF);
+[e = *U -> -> 4054 `i `*VNuc -> & _ciclos -> -> 255 `i `ui `uc ]
+"19
+[; ;Timer.c: 19:     (((*(volatile __near unsigned char*)0xFF2)) &= ~(1<<2));
+[e =& *U -> -> 4082 `i `*VNuc -> ~ << -> 1 `i -> 2 `i `uc ]
+"20
+[; ;Timer.c: 20: }
+[e :UE 6 ]
+}
+"22
+[; ;Timer.c: 22: char FimTimer(void){
+[v _FimTimer `(uc ~T0 @X0 1 ef ]
+{
+[e :U _FimTimer ]
+[f ]
+"23
+[; ;Timer.c: 23:     return (((*(volatile __near unsigned char*)0xFF2)) & (1<<2));
+[e ) -> & -> *U -> -> 4082 `i `*VNuc `i << -> 1 `i -> 2 `i `uc ]
+[e $UE 7  ]
+"24
+[; ;Timer.c: 24: }
+[e :UE 7 ]
+}

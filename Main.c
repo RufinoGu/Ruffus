@@ -32,7 +32,7 @@ void main(void) {
     TRISA = 0b00111111;
     TRISB = 0b11111100;
     TRISC = 0b10000000;
-    TRISD = 0;             
+    TRISD = 0x00;             
     TRISE = 0b00000111;
  
     LED_OFF_FS;
@@ -44,36 +44,5 @@ void main(void) {
     LED_OFF_6;
     LED_OFF_7;
     
-    for(;;){
-        Valor[0] = sensor0();
-        Valor1 = sensor1();
-        Valor2 = sensor2();
-        Valor3 = sensor3();
-        //Valor4 = sensor4();
-        //Valor5 = sensor5();
-        //Valor6 = sensor6();
-        //Valor7 = sensor7(); 
-        
-        if ((Valor0 > 50)&&(Valor0 < 100)){
-            LED_ON_1;
-        }else{
-            LED_OFF_1;
-        }
-        
-        if ((Valor1 > 50)&&(Valor1 < 100)){
-            LED_ON_2;
-        }else{
-            LED_OFF_2;
-        }
-        if ((Valor2 > 50)&&(Valor2 < 100)){
-            LED_ON_3;
-        }else{
-            LED_OFF_3;
-        }
-        if ((Valor3 > 50)&&(Valor3 < 100)){
-            LED_ON_4;
-        }else{
-            LED_OFF_4;
-        }
-    }
+    
 }

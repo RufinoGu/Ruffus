@@ -1,0 +1,182 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"12 ./LeituraAD.h
+[; ;./LeituraAD.h: 12: unsigned char AdcRead(char pin);
+[v _AdcRead `(uc ~T0 @X0 0 ef1`uc ]
+"5 Control.c
+[; ;Control.c: 5: int i;
+[v _i `i ~T0 @X0 1 e ]
+"6
+[; ;Control.c: 6: int Sens0[20];
+[v _Sens0 `i ~T0 @X0 -> 20 `i e ]
+"7
+[; ;Control.c: 7: int Sens1;
+[v _Sens1 `i ~T0 @X0 1 e ]
+"8
+[; ;Control.c: 8: int Sens2;
+[v _Sens2 `i ~T0 @X0 1 e ]
+"9
+[; ;Control.c: 9: int Sens3;
+[v _Sens3 `i ~T0 @X0 1 e ]
+"10
+[; ;Control.c: 10: int Sens4;
+[v _Sens4 `i ~T0 @X0 1 e ]
+"11
+[; ;Control.c: 11: int Sens5;
+[v _Sens5 `i ~T0 @X0 1 e ]
+"12
+[; ;Control.c: 12: int Sens6;
+[v _Sens6 `i ~T0 @X0 1 e ]
+"13
+[; ;Control.c: 13: int Sens7;
+[v _Sens7 `i ~T0 @X0 1 e ]
+"16
+[; ;Control.c: 16: unsigned char sensor0(void){
+[v _sensor0 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor0 ]
+[f ]
+"17
+[; ;Control.c: 17:     for(i=0;i<20;i++){
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 20 `i 2  ]
+[e $U 3  ]
+[e :U 2 ]
+{
+"18
+[; ;Control.c: 18:         Sens0[i] = AdcRead(0);
+[e = *U + &U _Sens0 * -> -> _i `ui `ux -> -> # *U &U _Sens0 `ui `ux -> ( _AdcRead (1 -> -> 0 `i `uc `i ]
+"19
+[; ;Control.c: 19:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 20 `i 2  ]
+[e :U 3 ]
+}
+"20
+[; ;Control.c: 20:     return Sens0[19];
+[e ) -> *U + &U _Sens0 * -> -> -> 19 `i `ui `ux -> -> # *U &U _Sens0 `ui `ux `uc ]
+[e $UE 1  ]
+"21
+[; ;Control.c: 21: }
+[e :UE 1 ]
+}
+"23
+[; ;Control.c: 23: unsigned char sensor1(void){
+[v _sensor1 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor1 ]
+[f ]
+"24
+[; ;Control.c: 24:     Sens1 = AdcRead(1);
+[e = _Sens1 -> ( _AdcRead (1 -> -> 1 `i `uc `i ]
+"25
+[; ;Control.c: 25:     return Sens1;
+[e ) -> _Sens1 `uc ]
+[e $UE 5  ]
+"26
+[; ;Control.c: 26: }
+[e :UE 5 ]
+}
+"28
+[; ;Control.c: 28: unsigned char sensor2(void){
+[v _sensor2 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor2 ]
+[f ]
+"29
+[; ;Control.c: 29:     Sens2 = AdcRead(2);
+[e = _Sens2 -> ( _AdcRead (1 -> -> 2 `i `uc `i ]
+"30
+[; ;Control.c: 30:     return Sens2;
+[e ) -> _Sens2 `uc ]
+[e $UE 6  ]
+"31
+[; ;Control.c: 31: }
+[e :UE 6 ]
+}
+"33
+[; ;Control.c: 33: unsigned char sensor3(void){
+[v _sensor3 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor3 ]
+[f ]
+"34
+[; ;Control.c: 34:     Sens3 = AdcRead(3);
+[e = _Sens3 -> ( _AdcRead (1 -> -> 3 `i `uc `i ]
+"35
+[; ;Control.c: 35:     return Sens3;
+[e ) -> _Sens3 `uc ]
+[e $UE 7  ]
+"36
+[; ;Control.c: 36: }
+[e :UE 7 ]
+}
+"38
+[; ;Control.c: 38: unsigned char sensor4(void){
+[v _sensor4 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor4 ]
+[f ]
+"39
+[; ;Control.c: 39:     Sens4 = AdcRead(4);
+[e = _Sens4 -> ( _AdcRead (1 -> -> 4 `i `uc `i ]
+"40
+[; ;Control.c: 40:     return Sens4;
+[e ) -> _Sens4 `uc ]
+[e $UE 8  ]
+"41
+[; ;Control.c: 41: }
+[e :UE 8 ]
+}
+"43
+[; ;Control.c: 43: unsigned char sensor5(void){
+[v _sensor5 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor5 ]
+[f ]
+"44
+[; ;Control.c: 44:     Sens5 = AdcRead(5);
+[e = _Sens5 -> ( _AdcRead (1 -> -> 5 `i `uc `i ]
+"45
+[; ;Control.c: 45:     return Sens5;
+[e ) -> _Sens5 `uc ]
+[e $UE 9  ]
+"46
+[; ;Control.c: 46: }
+[e :UE 9 ]
+}
+"48
+[; ;Control.c: 48: unsigned char sensor6(void){
+[v _sensor6 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor6 ]
+[f ]
+"49
+[; ;Control.c: 49:     Sens6 = AdcRead(6);
+[e = _Sens6 -> ( _AdcRead (1 -> -> 6 `i `uc `i ]
+"50
+[; ;Control.c: 50:     return Sens6;
+[e ) -> _Sens6 `uc ]
+[e $UE 10  ]
+"51
+[; ;Control.c: 51: }
+[e :UE 10 ]
+}
+"53
+[; ;Control.c: 53: unsigned char sensor7(void){
+[v _sensor7 `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sensor7 ]
+[f ]
+"54
+[; ;Control.c: 54:     Sens7 = AdcRead(7);
+[e = _Sens7 -> ( _AdcRead (1 -> -> 7 `i `uc `i ]
+"55
+[; ;Control.c: 55:     return Sens7;
+[e ) -> _Sens7 `uc ]
+[e $UE 11  ]
+"56
+[; ;Control.c: 56: }
+[e :UE 11 ]
+}

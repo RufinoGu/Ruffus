@@ -1,0 +1,119 @@
+[p LITE_MODE AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"16 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\Control.c
+[v _sensor0 sensor0 `(uc  1 e 1 0 ]
+"23
+[v _sensor1 sensor1 `(uc  1 e 1 0 ]
+"28
+[v _sensor2 sensor2 `(uc  1 e 1 0 ]
+"33
+[v _sensor3 sensor3 `(uc  1 e 1 0 ]
+"11 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\LeituraAD.c
+[v _AdcInit AdcInit `(v  1 e 1 0 ]
+"17
+[v _AdcRead AdcRead `(uc  1 e 1 0 ]
+"17 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\Control.c
+[v _i i `i  1 e 2 0 ]
+"6
+[v _Sens0 Sens0 `[20]i  1 e 40 0 ]
+"7
+[v _Sens1 Sens1 `i  1 e 2 0 ]
+"8
+[v _Sens2 Sens2 `i  1 e 2 0 ]
+"9
+[v _Sens3 Sens3 `i  1 e 2 0 ]
+"10
+[v _Sens4 Sens4 `i  1 e 2 0 ]
+"11
+[v _Sens5 Sens5 `i  1 e 2 0 ]
+"12
+[v _Sens6 Sens6 `i  1 e 2 0 ]
+"13
+[v _Sens7 Sens7 `i  1 e 2 0 ]
+"17 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+[v main@Valor3 Valor3 `uc  1 a 1 12 ]
+"22
+[v main@Valor2 Valor2 `uc  1 a 1 11 ]
+"21
+[v main@Valor1 Valor1 `uc  1 a 1 10 ]
+"20
+[v main@Valor0 Valor0 `uc  1 a 1 9 ]
+"27
+[v main@Valor7 Valor7 `uc  1 a 1 8 ]
+"26
+[v main@Valor6 Valor6 `uc  1 a 1 7 ]
+"25
+[v main@Valor5 Valor5 `uc  1 a 1 6 ]
+"24
+[v main@Valor4 Valor4 `uc  1 a 1 5 ]
+"78
+} 0
+"33 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\Control.c
+[v _sensor3 sensor3 `(uc  1 e 1 0 ]
+{
+"36
+} 0
+"28
+[v _sensor2 sensor2 `(uc  1 e 1 0 ]
+{
+"31
+} 0
+"23
+[v _sensor1 sensor1 `(uc  1 e 1 0 ]
+{
+"26
+} 0
+"16
+[v _sensor0 sensor0 `(uc  1 e 1 0 ]
+{
+"21
+} 0
+"17 C:\Users\Massa\Desktop\Elts Uairrior\Programação\Autonomos\Furmigao v2.0\Furmigao_v2.0.X\LeituraAD.c
+[v _AdcRead AdcRead `(uc  1 e 1 0 ]
+{
+[v AdcRead@pin pin `uc  1 a 1 wreg ]
+"19
+[v AdcRead@ADvalor ADvalor `ui  1 a 2 1 ]
+"17
+[v AdcRead@pin pin `uc  1 a 1 wreg ]
+"21
+[v AdcRead@pin pin `uc  1 a 1 0 ]
+"30
+} 0
+"11
+[v _AdcInit AdcInit `(v  1 e 1 0 ]
+{
+"15
+} 0
